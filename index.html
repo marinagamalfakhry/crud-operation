@@ -1,0 +1,64 @@
+<html>
+    <head>
+      <title>crud operation</title>
+      <link rel="icon" href="media/1_mrOXGyIa3BlPK80peLmEbA.png">
+        <link rel="stylesheet" href="icon/all.min.css">
+         <link rel="stylesheet" href="css/bootstrap.min.css">
+         <link rel="stylesheet" href="style.css">
+         <script src="js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+      <div class="style">
+      <div class="above ">
+
+       <div class=" w-75 m-auto ">
+      <label  class="mt-5" for="bookName">Book Name:</label>
+      <input id="bookName" class="form-control mb-3 bg-transparent text-white border border-2" type="text">
+      <div class="alert alert-danger p-2 text-center d-none error1" role="alert">
+       Enter your book name and don't forget the first letter must be uppercase!
+      </div>
+
+      <label for="bookCategory">Book Category:</label>
+      <input id="bookCategory" class="form-control mb-3 bg-transparent text-white border border-2" type="text">
+      <div class="alert alert-danger p-2 text-center d-none error2" role="alert">
+        Enter your book Category and don't forget the first letter must be uppercase!
+       </div>
+
+      <label for="bookPrice">Book Price:</label>
+      <input id="bookPrice" class="form-control bg-transparent text-white border border-2" type="number">
+      <div class="alert alert-danger p-2 text-center d-none error3" role="alert">
+        Enter your book price !
+       </div>
+
+      <div class="input-group mt-5 ">
+        <span class="input-group-text bg-transparent text-white border border-2 change">About the Book</span>
+        <textarea  id="aboutBook" class="form-control bg-transparent border border-2 text-white" aria-label="With textarea "></textarea>
+      </div>
+      <button disabled id="addBtn" type="button" class="btn btn-outline-light float-end  my-4 border border-2 p-2 change">Add to the shelve</button>
+      <div class="clearfix"></div>
+       </div>
+       <div class="searchBar">
+        <input id="search" onkeyup="search(this.value)" placeholder="Search about your book" class="form-control my-4 w-50 m-auto utline-light text-dark border border-2" type="text">
+      </div>
+      
+       <div class="w-75 m-auto mt-5 ">
+        <table class="table text-white change ">
+          <thead>
+            <th>Book Name</th>
+            <th>Book Category</th>
+            <th>Book Price</th>
+            <th>About the Book</th>
+          </thead>
+          <tbody id="content">
+
+          </tbody>
+        </table>
+       </div>
+      </div>
+      </div>
+
+      <script src="main.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+
+    </body>
+</html>
